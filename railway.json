@@ -2,10 +2,10 @@
   "$schema": "https://railway.com/railway.schema.json",
   "build": {
     "builder": "DOCKERFILE",
-    "dockerfilePath": "Dockerfile"
+    "dockerfilePath": "browser.Dockerfile"
   },
   "deploy": {
-    "startCommand": "node /home/theia/src-gen/backend/main.js /home/project --hostname=0.0.0.0 --port=$PORT",
+    "startCommand": "node /home/theia/applications/browser/lib/backend/main.js /home/project --hostname=0.0.0.0 --port=$PORT",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
